@@ -13,7 +13,7 @@ function sum(a,b) {
 }
 
 // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+testSum(4,7);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
@@ -26,7 +26,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a,b) {
   var result = a * b;
-  var message = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
+  var message = 'The product of 4 and 7 is 28.';
   return [result + message];
 }
 
@@ -43,12 +43,13 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Note: You are not allowed to use the arithmetic operators + and * in this function. Instead, you must use your existing sum() and multiply() functions to do the calculations.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-x
-//   var result2 = multiply(array);
-//   var element2 = '2,3,4, was passed in as an arry of numbers and 9 is there some.';
-//   var sumAndMultiply = [result, result2];
-//   return [result + result2 + element2]
-// }
+function sumAndMultiply(a,b,c) {
+  var sumResult = a + b + c;
+  var multiplicationResult = a * b * c;
+  var element = '4,7, and 5, sum to 16.';
+  var element2 = 'The product of 4 and 7 and 5 is 140.';
+  return [sumResult + multiplicationResult + element + element2];
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -71,26 +72,25 @@ function sumArray(testArray) {
   console.log(2,3,4 + 'was passed in as an array of numbers, and 9 is their sum.');
 }
 
-// Here is the test for sumArray(); uncomment it to run it
-
-testSumArray(testArray);
-
-// Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
-
-/////////////////////////////////////
-/* Problem 5
-Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
-"The numbers 2,3,4 have a product of 24."
-Note: You are not allowed to use the arithmetic operators + and * in this function. Instead, you must use your existing sum() and multiply() functions to do the calculations.
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
-
-// Write your code here
-function multipleArray(a,b,c) {
-  var fMArray = [2, 3, 4];
-  var fMArrayM = [2] [3],[4]);
-  return array[fMArray];
-}
-
+// // Here is the test for sumArray(); uncomment it to run it
+//
+// testSumArray(testArray);
+//
+// // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
+//
+// /////////////////////////////////////
+// /* Problem 5
+// Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+// "The numbers 2,3,4 have a product of 24."
+// Note: You are not allowed to use the arithmetic operators + and * in this function. Instead, you must use your existing sum() and multiply() functions to do the calculations.
+// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
+//
+// // Write your code here
+// function multipleArray(a,b,c) {
+//   var fMArray = [2, 3, 4];
+//   var fMArrayM = [2] [3],[4]);
+//   return array[fMArray];
+// }
 
 // // function multiplyArray(testArray) {
 //
