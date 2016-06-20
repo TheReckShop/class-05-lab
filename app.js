@@ -48,11 +48,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){
-
+  var array = [2, 3, 4];
+  var result = sum(array[0] + array[1] + array[2]);
+  var result2 = multiply(array[0] * array[1] * array[2]);
+  element2 = '2,3,4, was passed in as an arry of numbers and 9 is there some.';
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. don't forget to create a new branch for your work on the next question!
 
