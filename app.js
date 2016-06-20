@@ -26,6 +26,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a,b){
+  var result2 = a * b;
+  var message2 = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
+  console.log(message2);
+  console.log('The product of ' + a + ' and ' + b + ' is ' + result + '.');
 
 }
 
