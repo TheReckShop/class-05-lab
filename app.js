@@ -69,7 +69,7 @@ function sumArray(testArray) {
 
 // // Here is the test for sumArray(); uncomment it to run it
 //
-// testSumArray(testArray);
+testSumArray(testArray);
 //
 // // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 //
