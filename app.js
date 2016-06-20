@@ -5,11 +5,12 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b){
+function sum(a,b) {
   var result = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
   console.log('The sum of' + 4 + ' and' + 7 + ' is' + result + '.');
   return [result, message];
+}
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
@@ -23,11 +24,10 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a,b){
+function multiply(a,b) {
   var result = a * b;
   var message = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
-  return [result, message];
-
+  return [result + message];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -43,15 +43,12 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Note: You are not allowed to use the arithmetic operators + and * in this function. Instead, you must use your existing sum() and multiply() functions to do the calculations.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
-function sumAndMultiply(a,b,c){
-  var array = [2, 3, 4.];
-  var result = sum(array[0] + array[1] + array[2]);
-  var result2 = multiply(array[0] * array[1] * array[2]);
-  var element2 = '2,3,4, was passed in as an arry of numbers and 9 is there some.';
-  return [result, result2];
-  console.log(result + result2 + element2);
-}
+x
+//   var result2 = multiply(array);
+//   var element2 = '2,3,4, was passed in as an arry of numbers and 9 is there some.';
+//   var sumAndMultiply = [result, result2];
+//   return [result + result2 + element2]
+// }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -66,10 +63,11 @@ Note: You are not allowed to use the arithmetic operators + and * in this functi
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-testArray = [2,3,4];
-function sumArray(testArray){
-  var elmement1 = sum(testArray[0] + testArray[1] + testArray[2]);
-  var element2 = multiply(testArray[1] + testArray[2] + testArray[3]);
+function sumArray(testArray) {
+  var testArray2 = [2,3,4];
+  var testArray2 = sum([0] + [1] + [2]);
+  var result2 = multiply(testArray[1] * testArray[2] * testArray[3]);
+  return [testArray2 + result2];
   console.log(2,3,4 + 'was passed in as an array of numbers, and 9 is their sum.');
 }
 
@@ -87,6 +85,12 @@ Note: You are not allowed to use the arithmetic operators + and * in this functi
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+function multipleArray(a,b,c) {
+  var fMArray = [2, 3, 4];
+  var fMArrayM = [2] [3],[4]);
+  return array[fMArray];
+}
+
 
 // // function multiplyArray(testArray) {
 //
@@ -97,8 +101,6 @@ Test this function by hand in the console to get it working, and when you think 
 // testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Submit the link to the repo via Canvas.
-
-
 
 function testSum() {
   if (sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
@@ -117,7 +119,7 @@ function testMultiply() {
 }
 
 function testSumAndMultiply() {
-  if (sumAndMultiply(4, 7, 5) === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
+  if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
   } else {
     console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
@@ -137,5 +139,5 @@ function testMultiplyArray() {
     console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
   } else {
     console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
-}
+  }
 }
