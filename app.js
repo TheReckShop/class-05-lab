@@ -5,13 +5,11 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a,b){
+function sum(a, b){
   var result = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
-  console.log(message);
-  console.log('The sum of 4 and 7 is 11.');
+  console.log('The sum of' + 4 + ' and' + 7 + ' is' + result + '.');
   return [result, message];
-}
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
@@ -28,7 +26,6 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a,b){
   var result = a * b;
   var message = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
-  console.log(message);
   return [result, message];
 
 }
@@ -48,10 +45,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){
-  var array = [2, 3, 4];
+  var array = [2, 3, 4.];
   var result = sum(array[0] + array[1] + array[2]);
   var result2 = multiply(array[0] * array[1] * array[2]);
-  element2 = '2,3,4, was passed in as an arry of numbers and 9 is there some.';
+  var element2 = '2,3,4, was passed in as an arry of numbers and 9 is there some.';
+  return [result, result2];
+  console.log(result + result2 + element2);
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -69,12 +68,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 testArray = [2,3,4];
 function sumArray(testArray){
-
+  var elmement1 = sum(testArray[0] + testArray[1] + testArray[2]);
+  var element2 = multiply(testArray[1] + testArray[2] + testArray[3]);
+  console.log(2,3,4 + 'was passed in as an array of numbers, and 9 is their sum.');
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
@@ -97,16 +98,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Submit the link to the repo via Canvas.
 
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
-/////////////////////////////////////
+
 
 function testSum() {
   if (sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
@@ -125,7 +117,7 @@ function testMultiply() {
 }
 
 function testSumAndMultiply() {
-  if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
+  if (sumAndMultiply(4, 7, 5) === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
   } else {
     console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
