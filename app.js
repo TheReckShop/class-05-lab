@@ -137,5 +137,5 @@ function testMultiplyArray() {
     console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
   } else {
     console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
-  }
+}
 }
