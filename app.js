@@ -1,4 +1,3 @@
-/////////////////////////////////////
 /* Problem 1 (this is your demo)
 Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 "The sum of 4 and 7 is 11."
@@ -7,8 +6,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a,b) {
   var result = a + b;
-  var message = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
-  console.log('The sum of' + 4 + ' and' + 7 + ' is' + result + '.');
+  var message = "The sum of 4 and 7 is 11.";
   return [result, message];
 }
 
@@ -25,9 +23,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a,b) {
-  var result = a * b;
-  var message = 'The product of 4 and 7 is 28.';
-  return [result + message];
+  return [(a * b), 'The product of 4 and 7 is 28.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -46,9 +42,9 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a,b,c) {
   var sumResult = a + b + c;
   var multiplicationResult = a * b * c;
-  var element = '4,7, and 5, sum to 16.';
+  var element = '4 and 7 and 5 sum to 16.';
   var element2 = 'The product of 4 and 7 and 5 is 140.';
-  return [sumResult + multiplicationResult + element + element2];
+  return [sumResult, multiplicationResult, element, element2];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -65,11 +61,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumArray(testArray) {
-  var testArray2 = [2,3,4];
-  var testArray2 = sum([0] + [1] + [2]);
-  var result2 = multiply(testArray[1] * testArray[2] * testArray[3]);
-  return [testArray2 + result2];
-  console.log(2,3,4 + 'was passed in as an array of numbers, and 9 is their sum.');
+  var testArray = [2,3,4];
+  var testArray2 = sum([0],[1],[2]);
+  var element2 = '2,3,4 was passed in as an array of numbers, and 9 is their sum.';
+  return [testArray2 + element2];
 }
 
 // // Here is the test for sumArray(); uncomment it to run it
